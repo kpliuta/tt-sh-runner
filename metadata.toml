@@ -1,0 +1,13 @@
+[general]
+id = "simple_github_sh_runner"
+name = "Simple github sh runner"
+description = "A simple shell-based runner. Executes shell scripts as tasks."
+url = "https://github.com/kpliuta/tt-sh-runner"
+version = "0.1.0"
+app_min_version = ">=0.1.0"
+
+[[task-validator]]
+command = "test -f {task_dir}/run.sh"
+
+[exec]
+task-exec = "sh {task_dir}/run.sh"
