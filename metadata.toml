@@ -7,9 +7,9 @@ version = "0.1.2"
 app_min_version = ">=0.1.0"
 
 [[task-validator]]
-command = "test -f {task_dir}/run.sh"
+command = "test -f {task_path}/run.sh"
 
 [exec]
 initialization = "echo 'Initialize runner'"
-task-exec = "sh {task_dir}/run.sh"
+task-exec = "sh {task_path}/run.sh"
 termination = "echo 'Terminate runner'"
